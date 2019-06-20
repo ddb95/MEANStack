@@ -5,10 +5,10 @@ var {
     Employee
 } = require('../models/employee');
 
-
 // localhost:3000/employees/
 // Retrieve All Data
 router.get('/', (req, res) => {
+    console.log(res);
     Employee.find((err, docs) => {
         if (!err) {
             res.send(docs);
