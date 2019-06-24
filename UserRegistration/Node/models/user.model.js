@@ -12,3 +12,5 @@ var userSchema = new mongoose.Schema({
     },
     saltSecret: String
 });
+
+mongoose.model('User', userSchema);

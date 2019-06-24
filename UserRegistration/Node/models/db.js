@@ -11,5 +11,7 @@ mongoose.connect(process.env.MONGODB_URI, {
     }
 });
 
+require('./user.model')
+
 // Export Module
 module.exports = mongoose;
